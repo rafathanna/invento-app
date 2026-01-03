@@ -53,6 +53,7 @@ const CreateSalesInvoicePage = () => {
     const componentRef = useRef<HTMLDivElement>(null);
 
     const handlePrint = useReactToPrint({
+        // @ts-ignore
         content: () => componentRef.current,
         documentTitle: `Invoice-${lastInvoiceData?.id || 'New'}`,
     });

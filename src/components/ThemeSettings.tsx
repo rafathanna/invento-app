@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { Sun, Moon, Monitor, Palette, Check, ChevronsUpDown } from 'lucide-react';
+import { Sun, Moon, Monitor, Palette, Check } from 'lucide-react';
 
 export default function ThemeSettings() {
     const { mode, setMode, colorTheme, setColorTheme } = useTheme();
@@ -49,8 +49,8 @@ export default function ThemeSettings() {
                             <button
                                 onClick={() => setMode('light')}
                                 className={`flex items-center justify-center gap-2 p-2 rounded-lg text-sm font-medium transition-all ${mode === 'light'
-                                        ? 'bg-white dark:bg-slate-700 text-primary-600 shadow-sm'
-                                        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                                    ? 'bg-white dark:bg-slate-700 text-primary-600 shadow-sm'
+                                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
                                     }`}
                             >
                                 <Sun size={16} />
@@ -59,8 +59,8 @@ export default function ThemeSettings() {
                             <button
                                 onClick={() => setMode('dark')}
                                 className={`flex items-center justify-center gap-2 p-2 rounded-lg text-sm font-medium transition-all ${mode === 'dark'
-                                        ? 'bg-white dark:bg-slate-700 text-primary-600 shadow-sm'
-                                        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                                    ? 'bg-white dark:bg-slate-700 text-primary-600 shadow-sm'
+                                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
                                     }`}
                             >
                                 <Moon size={16} />
@@ -69,8 +69,8 @@ export default function ThemeSettings() {
                             <button
                                 onClick={() => setMode('system')}
                                 className={`flex items-center justify-center gap-2 p-2 rounded-lg text-sm font-medium transition-all ${mode === 'system'
-                                        ? 'bg-white dark:bg-slate-700 text-primary-600 shadow-sm'
-                                        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                                    ? 'bg-white dark:bg-slate-700 text-primary-600 shadow-sm'
+                                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
                                     }`}
                             >
                                 <Monitor size={16} />

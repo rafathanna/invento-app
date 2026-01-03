@@ -18,6 +18,7 @@ const InvoiceDetailsModal = ({ isOpen, onClose, invoice }: InvoiceDetailsModalPr
 
     // @ts-ignore - content property exists in runtime
     const handlePrint = useReactToPrint({
+        // @ts-ignore
         content: () => printRef.current,
         documentTitle: invoice ? `Invoice-${invoice.invoiceNumber}` : 'Invoice',
     });
